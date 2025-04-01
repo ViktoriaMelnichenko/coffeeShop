@@ -1,0 +1,126 @@
+:host{
+    width: calc(100%/3 - 24px);
+}
+
+.product_card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: stretch;
+    border: 1px solid rgba(187, 187, 187, 1);
+    border-radius: 4px;
+    width: 100%;
+    column-gap: 24px;
+
+    .card_images {
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .card_images {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .card_images {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .card_images {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    @media screen and (min-width: 1700px) {
+        .card_images {
+            width: 190px;
+            height: 190px;
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        .card_images {
+            width: 210px;
+            height: 210px;
+        }
+    }
+
+
+    .product_card-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .card_title {
+            flex: 1;
+            color: var(--Primary-Black, #111315);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: end;
+        }
+
+        .card_price {
+            color: var(--Primary-Black, #111315);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card_title {
+                font-size: 16px;
+            }
+
+            .card_price {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .card_title {
+                font-size: 14px;
+            }
+
+            .card_price {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .product_card {
+        padding: 20px 40px;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .product_card {
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    :host{
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :host{
+        width: 100%;
+    }
+}
+

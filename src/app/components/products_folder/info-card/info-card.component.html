@@ -1,0 +1,47 @@
+<div class="info-card_container font-family">
+    @if (desktopSize) {
+        <div class="info_img">
+        <img class="br-radius-5" [src]="productInfo_img" [alt]="productInfo_title" width="100%" height="100%">
+    </div>
+
+    <div class="info_content">
+        <div class="info-title-price">
+            <h2 class="info_title">
+                {{productInfo_title}}
+            </h2>
+    
+            <div class="info-card_price">
+                {{productInfo_price + '  UAH'}}
+            </div>
+        </div>
+        
+
+        <div class="info_discription">
+            {{productInfo_discription}}
+        </div>
+    </div>
+    } @else {
+        <div class="info_content">
+            <div class="info_img">
+                <img class="br-radius-5" [src]="productInfo_img" [alt]="productInfo_title" width="100%" height="100%">
+            </div>
+    
+            <div class="info-title-price">
+                <h2 class="info_title">
+                    {{productInfo_title}}
+                </h2>
+        
+                <div class="info-card_price">
+                    {{productInfo_price + '  UAH'}}
+                </div>
+            </div>
+            
+    
+            
+        </div>
+    
+        <div class="info_discription">
+            {{productInfo_discription}}
+        </div>
+    } 
+</div>

@@ -1,0 +1,15 @@
+.home_pages {
+    margin: 48px 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .home_pages {
+        margin: 40px 6%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home_pages {
+        margin: 40px 5%;
+    }
+}

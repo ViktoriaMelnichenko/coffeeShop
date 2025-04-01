@@ -1,0 +1,24 @@
+<div class="detalis_container">
+
+    <div class="detalis_discription">
+        <app-info-card
+        [productInfo_img]="products[authServices.navigateId].product_img"
+        [productInfo_discription]="products[authServices.navigateId].product_discription"
+        [productInfo_price]="products[authServices.navigateId].product_price"
+        [productInfo_title]="products[authServices.navigateId].product_title">
+        </app-info-card>
+    </div>
+
+    <div class="detalis-card_content">
+        <div class="title">
+            You may also like
+        </div>
+        <div class="card">
+                <app-details-card
+                   [products]="products">
+
+                </app-details-card> 
+        </div>
+    </div>
+ 
+</div>

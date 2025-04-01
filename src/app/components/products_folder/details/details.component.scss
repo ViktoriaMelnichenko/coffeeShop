@@ -1,0 +1,38 @@
+.detalis_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+
+    .detalis-card_content {
+        .title {
+            margin-bottom: 28px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .title {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .title {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .detalis_cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 40px;
+
+            width: 1040px;
+            overflow: hidden;
+        }
+    }
+}

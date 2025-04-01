@@ -1,0 +1,71 @@
+.carousel_container {
+ display: flex;
+ column-gap: 15px;
+}
+
+    .details-card_container {
+        display: flex;
+        flex-direction: column;    
+        padding: 24px 24px;
+        margin: 8px;
+        align-items: center;
+        border: 1px solid rgba(187, 187, 187, 1);
+        border-radius: 4px;
+        row-gap: 12px;
+        flex: 1;
+
+        .details-card_img {
+            width: 160px;
+            height: 160px;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+        }
+
+        .details-card_title {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .details-card_price {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .details-crd_button {
+            width: 140px;
+            height: 40px;
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: rgba(217, 124, 55, 1);  
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .details-card_container {
+            padding: 24px 16px;
+            margin: 8px;
+        }
+    }
+
+    :host ::ng-deep {
+
+        .p-carousel-item {
+            display: flex;
+        }
+        .p-carousel-items-container {
+            justify-content: space-between;
+        }  
+
+        ul {
+            display: none;
+        }
+    } 

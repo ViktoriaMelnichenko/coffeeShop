@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.br-radius-5 {
+    border-radius: 5px;
+}
+
+.font-family {
+    font-family: "DejaVu Sans", Tahoma, sans-serif;
+}

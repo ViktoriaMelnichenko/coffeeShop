@@ -1,0 +1,121 @@
+<footer class="footer_section font-family">
+    @if (desktopSize) {
+       <div class="footer_logo_section" (click)="navigate()">
+        <div class="footer_logo">
+            <img src="../../../../assets/images/footer/footerLogoWhite.png" 
+            alt="logo" width="100%" height="100%">
+        </div>
+
+        <div class="footer_logo_title">
+            CoffeeShop
+        </div>
+    </div>
+
+    <div class="contact_us">
+        <div class="email">
+            <div class="contact_icon">
+                <img src="../../../../assets/images/footer/email.png" 
+                     alt="logo" width="100%" height="100%">
+            </div>
+            
+            <p><a class="email-link" href="info@coffeeShop.com">{{'info@coffeeShop.com'}}</a></p>
+        </div>
+
+        <div class="phon">
+            <div class="contact_icon">
+                <img src="../../../../assets/images/footer/phone.png" 
+                     alt="logo" width="100%" height="100%">
+            </div>
+            
+            <p>+380 123456789</p>
+        </div>
+
+        <div class="location">
+            <div class="contact_icon">
+                <img src="../../../../assets/images/footer/location.png" 
+                     alt="logo" width="100%" height="100%">  
+            </div>
+           
+            <p> Velyka Vasylkivska St, 15/2, Kyiv</p>
+        </div>
+    </div> 
+    
+
+    <div class="social_media">
+        <div class="social_media_icon">
+            <img src="../../../../assets/images/footer/facebook.png" 
+            alt="logo" width="100%" height="100%">
+        </div>
+
+        <div class="social_media_icon">
+            <img src="../../../../assets/images/footer/instagram.png" 
+            alt="logo" width="100%" height="100%">
+        </div>
+
+        <div class="social_media_icon">
+            <img src="../../../../assets/images/footer/tiktok.png" 
+            alt="logo" width="100%" height="100%">
+        </div>
+    </div> 
+    } @else {
+        <div class="mobile_footer">
+            <div class="footer_logo_section" (click)="navigate()">
+                <div class="footer_logo">
+                    <img src="../../../../assets/images/footer/footerLogoWhite.png" 
+                    alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="footer_logo_title">
+                    CoffeeShop
+                </div>
+            </div>
+
+            <div class="social_media">
+                <div class="social_media_icon">
+                    <img src="../../../../assets/images/footer/facebook.png" 
+                    alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="social_media_icon">
+                    <img src="../../../../assets/images/footer/instagram.png" 
+                    alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="social_media_icon">
+                    <img src="../../../../assets/images/footer/tiktok.png" 
+                    alt="logo" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="contact_us">
+            <div class="email">
+                <div class="contact_icon">
+                    <img src="../../../../assets/images/footer/email.png" 
+                        alt="logo" width="100%" height="100%">
+                </div>
+                
+                <p><a class="email-link" href="info@coffeeShop.com">{{'info@coffeeShop.com'}}</a></p>
+            </div>
+
+            <div class="phon">
+                <div class="contact_icon">
+                    <img src="../../../../assets/images/footer/phone.png" 
+                        alt="logo" width="100%" height="100%">
+                </div>
+                
+                <p>+380 123456789</p>
+            </div>
+
+            <div class="location">
+                <div class="contact_icon">
+                    <img src="../../../../assets/images/footer/location.png" 
+                        alt="logo" width="100%" height="100%">  
+                </div>
+            
+                <p> Velyka Vasylkivska St, 15/2, Kyiv</p>
+            </div>
+        </div>
+    }   
+</footer>

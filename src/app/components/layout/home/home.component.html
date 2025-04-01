@@ -1,0 +1,8 @@
+<div class="home_container">
+    @for (item of menuList; track $index) {
+         <app-card [title]="item.title"
+                   [imgSrc]="item.imgSrc"
+                   [url]="item.url">
+         </app-card>
+    }   
+</div>

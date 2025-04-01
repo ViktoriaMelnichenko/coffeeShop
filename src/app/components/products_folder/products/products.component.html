@@ -1,0 +1,38 @@
+    <div class="product_container font-family">
+
+        <div class="back-button" (click)="backNavigation($event)">
+            <i class="pi pi-arrow-left" style="color: #BBB"></i>
+        </div>
+
+        <div class="title_routing">
+            <a [routerLink]="'/'"><samp class="routing-spam font-family">Home / </samp></a>
+            <samp class="routing-spam font-family" 
+                  [ngStyle]="!navigationUrl ? {'cursor': 'pointer'} : {'cursor' : ''}"
+                  (click)="navigate(navigateTitle)">{{navigateTitle | titlecase}} </samp>
+            <samp class="font-family">{{authServices.navigationTitle | titlecase}}</samp>
+        </div>
+        
+        @if (navigationUrl) {
+        <div class="product_content">
+
+            <div class="products_list">
+                @for (item of products_list; track $index) {
+                    <app-product-card
+                        [product_img]="item.product_img"
+                        [product_title]="item.product_title"
+                        [product_price]="item.product_price"
+                        [product_id]="item.product_id"
+                    >
+                    </app-product-card>
+                }
+            </div>
+
+        </div>
+        } 
+        @else {
+            <router-outlet></router-outlet>
+        }
+            
+    </div>
+  
+
