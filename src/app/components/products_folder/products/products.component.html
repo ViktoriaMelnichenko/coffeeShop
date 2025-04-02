@@ -6,8 +6,8 @@
 
         <div class="title_routing">
             <a [routerLink]="'/'"><samp class="routing-spam font-family">Home / </samp></a>
-            <samp class="routing-spam font-family" 
-                  [ngStyle]="!navigationUrl ? {'cursor': 'pointer'} : {'cursor' : ''}"
+            <samp class="font-family" 
+                  [ngClass]="{'routing-spam' : !navigationUrl} "
                   (click)="navigate(navigateTitle)">{{navigateTitle | titlecase}} </samp>
             <samp class="font-family">{{authServices.navigationTitle | titlecase}}</samp>
         </div>

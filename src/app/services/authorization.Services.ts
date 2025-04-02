@@ -665,9 +665,9 @@ export class AuthorizationService {
           {title: 'Coffee List', imgSrc: '../../../../assets/images/home/coffe-list.png', url: 'coffee', category: this.products_coffee },
           {title: 'Sweets', imgSrc: '../../../../assets/images/home/sweets.jpg', url: 'sweets', category: this.products_sweets},
           {title: 'Cold Drinks', imgSrc: '../../../../assets/images/home/cold-drinks.jpg', url: 'coldDrinks', category: this.products_coldDrinks},
-          {title: 'Food', imgSrc: '../../../../assets/images/home/food.png', url: 'food', category: this.products_food},
-          {title: 'Alcohol', imgSrc: '../../../../assets/images/home/alcohol.png', url: 'alco', category: this.products_alco},
-          {title: 'Coffee Bean', imgSrc: '../../../../assets/images/home/coffe.png', url: 'coffeeBean', category: this.products_coffeeBean}
+          {title: 'Food', imgSrc: '../../../../assets/images/home/food.avif', url: 'food', category: this.products_food},
+          {title: 'Alco Cocktail', imgSrc: '../../../../assets/images/home/alco.jpg', url: 'alco', category: this.products_alco},
+          {title: 'Coffee Bean', imgSrc: '../../../../assets/images/home/coffee-bean.webp', url: 'coffeeBean', category: this.products_coffeeBean}
       ]
 
   constructor() { }

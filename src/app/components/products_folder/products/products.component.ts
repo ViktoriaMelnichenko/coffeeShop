@@ -3,12 +3,12 @@ import { ProductCardComponent } from "../product-card/product-card.component";
 import { ProductsList } from '../../../interfaces/data.interface';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { AuthorizationService } from '../../../services/authorization.Services';
-import { Location, NgStyle, TitleCasePipe } from '@angular/common';
+import { Location, NgClass, NgStyle, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [ProductCardComponent, RouterOutlet, TitleCasePipe, RouterLink, NgStyle],
+  imports: [ProductCardComponent, RouterOutlet, TitleCasePipe, RouterLink, NgClass],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
