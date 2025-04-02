@@ -1,3 +1,39 @@
+🚀 Project Setup Guide
+Prerequisites
+Ensure you have the following installed before proceeding:
+•	Node.js (version 18.19.0) → Download here
+•	Angular CLI
+📌 Installation Steps
+
+1.	Install Node.js
+Download and install Node.js v18.19.0 from the official website.
+
+2.	Verify Node.js Installation
+Open a terminal and run:
+node -v
+It should return:
+v18.19.0
+
+3.	Install Angular CLI
+Run the following command:
+npm install -g @angular/cli
+To verify, check the version:
+ng version
+
+4.	Clone the Repository
+git clone <repository_url>
+cd <your_project_directory>
+
+5.	Install Dependencies
+npm install
+
+6.	Run the Project
+ng serve
+The application should now be running on http://localhost:4200/.
+
+
+
+
 # CoffeeShop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
